@@ -65,9 +65,26 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" override="true">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>em1</instance>
+            <instance>em2</instance>
+            <instance>imsAospSlot1</instance>
+            <instance>imsAospSlot2</instance>
+            <instance>se1</instance>
+            <instance>se2</instance>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+        <interface>
+            <name>ISap</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
         <fqname>@1.2::IRadio/em1</fqname>
         <fqname>@1.2::IRadio/em2</fqname>
         <fqname>@1.2::IRadio/imsAospSlot1</fqname>
@@ -97,9 +114,15 @@
         <transport arch="32+64">passthrough</transport>
         <fqname>@1.0::IDevice/default</fqname>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" override="true">
         <name>android.hardware.secure_element</name>
         <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>ISecureElement</name>
+            <instance>SIM1</instance>
+            <instance>SIM2</instance>
+        </interface>
         <fqname>@1.2::ISecureElement/SIM1</fqname>
         <fqname>@1.2::ISecureElement/SIM2</fqname>
     </hal>
@@ -235,9 +258,31 @@
         <fqname>@1.2::IMtkPerf/default</fqname>
         <fqname>@1.2::IMtkPower/default</fqname>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" override="true">
         <name>vendor.mediatek.hardware.mtkradioex</name>
         <transport>hwbinder</transport>
+        <version>3.0</version>
+        <interface>
+            <name>IMtkRadioEx</name>
+            <instance>imsSlot1</instance>
+            <instance>imsSlot2</instance>
+            <instance>mtkAssist1</instance>
+            <instance>mtkAssist2</instance>
+            <instance>mtkCap1</instance>
+            <instance>mtkCap2</instance>
+            <instance>mtkEm1</instance>
+            <instance>mtkEm2</instance>
+            <instance>mtkRcs1</instance>
+            <instance>mtkRcs2</instance>
+            <instance>mtkRsu1</instance>
+            <instance>mtkRsu2</instance>
+            <instance>mtkSe1</instance>
+            <instance>mtkSe2</instance>
+            <instance>mtkSlot1</instance>
+            <instance>mtkSlot2</instance>
+            <instance>mtkSmartRatSwitch1</instance>
+            <instance>mtkSmartRatSwitch2</instance>
+        </interface>
         <fqname>@3.0::IMtkRadioEx/imsSlot1</fqname>
         <fqname>@3.0::IMtkRadioEx/imsSlot2</fqname>
         <fqname>@3.0::IMtkRadioEx/mtkAssist1</fqname>

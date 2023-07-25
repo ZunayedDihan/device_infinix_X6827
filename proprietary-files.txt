@@ -475,10 +475,6 @@ vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Miscellaneous
-odm/etc/vintf/manifest_dsds.xml
-odm/etc/vintf/manifest_qsqs.xml
-odm/etc/vintf/manifest_ss.xml
-odm/etc/vintf/manifest_tsts.xml
 vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk
 vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk
 vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk
@@ -2391,10 +2387,6 @@ vendor/lib64/vendor.transsion.hardware.transtorage.storage@1.0.so
 vendor/lib64/vendor.trustonic.tee.tui@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.1.so
-vendor/odm/etc/vintf/manifest_dsds.xml
-vendor/odm/etc/vintf/manifest_qsqs.xml
-vendor/odm/etc/vintf/manifest_ss.xml
-vendor/odm/etc/vintf/manifest_tsts.xml
 vendor/priv-app/GpuGameDriver.mt6781/GpuGameDriver.mt6781.apk
 vendor/res/images/lcd_test_00.png
 vendor/res/images/lcd_test_01.png
@@ -2404,6 +2396,5 @@ vendor/res/sound/testpattern1.wav
 vendor/thh/ta/93feffccd8ca11e796c7c7a21acb4932.ta
 vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
 vendor/thh/ta/df1edda8627911e980ae507b9d9a7e7d.ta
-vendor/fstab.enableswap
 vendor/ro.prop
 vendor/rw.prop

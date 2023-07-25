@@ -76,9 +76,12 @@ PRODUCT_PACKAGES += \
     meta_init.connectivity.rc \
     init.cgroup.rc \
     init.recovery.mt6781.rc \
+	fstab.mt6781
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.enableswap:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.enableswap
+    $(DEVICE_PATH)/rootdir/etc/fstab.enableswap:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.enableswap \
+    $(DEVICE_PATH)/rootdir/etc/fstab.mt6781:$(TARGET_VENDOR_RAMDISK_OUT)/fstab.mt6781
+
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
