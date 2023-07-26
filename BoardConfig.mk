@@ -8,8 +8,18 @@ DEVICE_PATH := device/Infinix/X6827
 
 # A/B
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS +=
 BOARD_USES_RECOVERY_AS_BOOT := true
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    odm \
+    product \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor \
+    vendor_boot
 
 # Architecture
 TARGET_ARCH := arm64
