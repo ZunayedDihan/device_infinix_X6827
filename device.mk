@@ -47,6 +47,14 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.mt6781.rc \
+    fstab.mt6781
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/etc/fstab.mt6781:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6781
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
