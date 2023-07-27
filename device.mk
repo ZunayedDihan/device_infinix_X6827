@@ -49,8 +49,20 @@ PRODUCT_CHARACTERISTICS := default
 
 # Rootdir
 PRODUCT_PACKAGES += \
+    init.insmod.sh
+
+PRODUCT_PACKAGES += \
+    fstab.mt6781 \
+    init.aee.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.modem.rc \
     init.mt6781.rc \
-    fstab.mt6781
+    init.mt6781.usb.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    init_connectivity.rc \
+    ueventd.mtk.rc
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.mt6781:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6781
