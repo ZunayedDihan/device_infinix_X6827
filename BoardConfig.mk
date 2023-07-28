@@ -121,6 +121,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
 
+# SELinux
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
