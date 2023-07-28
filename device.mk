@@ -62,7 +62,9 @@ PRODUCT_PACKAGES += \
     ueventd.mtk.rc
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.mt6781:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6781
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.mt6781.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6781.rc \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6781:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6781
+
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
